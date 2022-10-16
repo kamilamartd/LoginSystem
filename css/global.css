@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    --black: #000C29;
+    --white: #F9F9F9;
+    --ligth-grey: #E5EAF1;
+    --grey: #BDBDBD;
+    --dark-grey: #828282;
+
+    --light-blue: #006EB3;
+    --blue: #2B94F4;
+    --middle-blue: #004A95;
+    --dark-blue: #002677;
+    --ligth-yellow: #FFBE55;
+    --yellow: #FFA10A;
+    --dark-yellow: #F59700;
+    --red: #E83F5B;
+
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--white);
+
+    display: flex;
+}
+
+body, button, .button-outlined, input, .input, textarea{
+    /* clamp - intervalo de tamanho. O menor tamanho é 14px, o padrão é 1.5rem ou 16px, o máximo é 2vw | Auxilia a responsividade natural */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input, input, button, .button, .button-outlined{
+    border-radius: .8rem;
+    
+    height: 4.8rem;
+    width: 36.3rem;
+}
+
+button, .button, .button-outlined{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0; /*espécie de margem que acompanha o texto*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter .2s;
+
+    cursor: pointer;
+}
+
+button:hover, .button:hover, .button-outlined:hover{
+    filter: brightness(1.2);
+}
+
+button > img,
+.button > img,
+.button-outlined > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.sr-only{
+    position: absolute; /*respeita somente um elemento. deixando ele sobre todos os outros*/
+    height: 1px;
+    width: 1px;
+    
+    padding: 0;
+    margin: -1px; /*pra cima do zero, pra cima da tela = "some da tela" ficando na parte superior, que não consiguimos ver*/
+    
+    overflow: hidden; /*sem barra de rolagem*/
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

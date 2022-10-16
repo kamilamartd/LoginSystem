@@ -1,0 +1,115 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'left rigth'
+}
+
+/* content */
+main{
+    grid-area: rigth;
+    margin: auto;
+    width: 52rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+
+    color: var(--yellow);
+    margin-bottom: 4rem;
+    margin-top: auto;
+}
+
+.content input{
+    border: .2rem solid var(--grey);
+    background: none;
+
+    padding: 0 1.6rem;
+    height: 5rem;
+    margin-bottom: 1.8rem;
+}
+
+input, button, .button{
+    width: 100%;
+    outline: none;
+}
+
+.input{
+    width: 36.4rem;
+}
+
+.content button{
+    background: var(--yellow);
+    color: var(--white);
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.content a{
+    background: none;
+    border: .2rem solid var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: var(--dark-blue);
+}
+
+.content .teste{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.content a{
+    margin-top: 1.8rem;
+}
+
+/* slogan */
+
+#h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-left: 6rem;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+.slogan{
+    grid-area: left;
+    width: 50rem;
+    margin:0 auto;
+    
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+#slogan{
+    position:fixed;
+    
+    margin-top: 20%;
+    overflow:hidden;
+}

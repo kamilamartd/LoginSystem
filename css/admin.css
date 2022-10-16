@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 52rem;
+    padding-top: 12.7rem;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+main input{
+    background: none;
+    outline: none;
+}
+
+main .input{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+
+    border: .2rem solid var(--grey);
+    background: none;
+
+    padding-left: 1.6rem;
+    height: 5 rem;
+    margin-bottom: 2.4rem;   
+}
+
+main #actions div{
+    display: flex;
+    align-items: center;
+    height: 0;
+    width: 0; 
+}
+
+main #actions a{
+    color: var(--dark-blue);
+    padding-right: 1.6rem;
+}

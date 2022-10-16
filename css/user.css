@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*main*/
+main {
+    width: 50rem;
+    padding: 2.4rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*main - inputs*/
+main input {
+    background: none;
+    outline: none;
+}
+
+main .input {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+
+    border: .2rem solid var(--grey);
+    background: none;
+
+    padding-left: 1.6rem;
+    height: 5 rem;
+    margin-bottom: 2.4rem;
+}
+
+main #actions div {
+    display: flex;
+    align-items: center;
+    height: 0;
+    width: 0;
+}
+
+main #actions a {
+    color: var(--dark-blue);
+    padding-right: 1.6rem;
+}
+
+main label {
+    padding-bottom: 1.2rem;
+}
+
+input,
+.input,
+button,
+.button {
+    width: 100%;
+    outline: none;
+}
+
+main .button {
+    background: var(--yellow);
+    color: var(--white);
+
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2.4rem;
+}
+
+main .delete {
+    background-color: var(--white);
+    color: var(--yellow);
+    border: .2rem solid var(--yellow);
+}
